@@ -1,0 +1,205 @@
+body {
+    font-family: 'Azeret Mono', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4db2ff;
+    position: relative;
+    width: 99%;
+}
+footer {
+    background-color: #4db2ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 99%;
+}
+.hero-container, .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.nav-links a{
+    display: flex;
+    gap: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fi-rr-user:hover {
+    color: #006aff;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.fi-rr-envelope:hover {
+    color: #006aff;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.header-container h1 a{
+    font-family: 'Playwrite AU QLD', sans-serif;
+    text-decoration: none;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+    color:rgb(255, 255, 255);
+}
+
+.header-container h1 a:hover {
+    color: #ffffff;
+    text-shadow: #006aff 2px 2px 4px;
+    cursor: pointer;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;;
+}
+
+.form-container input{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+.form-container textarea {
+    width: 250px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+.form-container button {
+    margin-top: 10px;
+    width: 250px;
+    padding: 10px;
+    background-color: #4db2ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.form-container button:hover {
+    box-shadow: 2px 2px 5px rgba(0, 55, 255, 0.5);
+    font-size: 16px;
+    background-color: #006aff;
+}
+.form-container button:active {
+    background-color: #004793;
+    box-shadow: 1px 1px 3px rgba(0, 55, 255, 0.5);
+}
+
+.name-container, .email-container, .message-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name-container label, .email-container label, .message-container label {
+    width: 80px;
+    font-weight: bold;
+}
+
+.create-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.create-post button {
+    width: 100px;
+    padding: 10px;
+    background-color: #4db2ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-post button:hover {
+    box-shadow: 2px 2px 5px rgba(0, 55, 255, 0.5);
+    font-size: 16px;
+    background-color: #006aff;
+}
+
+.title-container, .blog-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.title-container label, .blog-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.title-container input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.blog-container textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.blog-creation{
+    font-size: 10px;
+    font-style: italic;
+    color: #666;
+    margin-block-start: 10px;
+}
+
+.post button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post button:hover {
+    box-shadow: 2px 2px 5px rgba(255, 77, 77, 0.5);
+    font-size: 16px;
+    background-color: #ff1a1a;
+}

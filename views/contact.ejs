@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<div class="content-container">
+    <h2>Contact Me</h2>
+    <div class = "form-container">
+        <form action="/contact" method="POST">
+            <div class = "name-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class = "email-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+
+            <div class = "message-container">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Place your message or suggestions" required></textarea>
+            </div>    
+            <button class= "submit-button" type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+<%- include("partials/footer.ejs") %>
